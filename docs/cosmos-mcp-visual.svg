@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Cosmos MCP &#8212; arquitectura y demo visual</title>
+  <desc id="desc">Flujo desde el usuario y Cursor hasta Cosmos MCP y las APIs NASA, junto con las capacidades y una muestra del briefing espacial.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#151b32"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ea8fe"/>
+      <stop offset="1" stop-color="#9b8afb"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6ea8fe"/>
+    </marker>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" rx="24" fill="url(#background)"/>
+  <circle cx="1090" cy="90" r="2" fill="#ffffff" opacity=".65"/>
+  <circle cx="1040" cy="160" r="1.5" fill="#ffffff" opacity=".45"/>
+  <circle cx="1130" cy="235" r="2" fill="#ffffff" opacity=".5"/>
+  <circle cx="80" cy="620" r="2" fill="#ffffff" opacity=".4"/>
+  <circle cx="150" cy="665" r="1.5" fill="#ffffff" opacity=".5"/>
+
+  <text x="64" y="68" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="700">Cosmos MCP</text>
+  <text x="64" y="98" fill="#9ca7bd" font-family="Inter, system-ui, sans-serif" font-size="16">Un agente de IA conectado a datos p&#250;blicos y verificables de la NASA</text>
+  <rect x="944" y="47" width="192" height="34" rx="17" fill="#163c35" stroke="#2ca58d"/>
+  <circle cx="966" cy="64" r="5" fill="#49d3b4"/>
+  <text x="980" y="69" fill="#b9f4e7" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">NASA Open APIs</text>
+
+  <text x="64" y="154" fill="#dce4f2" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">FLUJO MCP</text>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="64" y="180" width="190" height="94" rx="14" fill="#171f36" stroke="#34405d"/>
+    <text x="86" y="215" fill="#f8fafc" font-size="17" font-weight="700">1. Usuario</text>
+    <text x="86" y="241" fill="#9ca7bd" font-size="13">Pregunta en lenguaje natural</text>
+    <line x1="270" y1="227" x2="321" y2="227" stroke="#6ea8fe" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="334" y="180" width="190" height="94" rx="14" fill="#171f36" stroke="#34405d"/>
+    <text x="356" y="215" fill="#f8fafc" font-size="17" font-weight="700">2. Cursor</text>
+    <text x="356" y="241" fill="#9ca7bd" font-size="13">Selecciona la capacidad</text>
+    <line x1="540" y1="227" x2="591" y2="227" stroke="#6ea8fe" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="604" y="170" width="220" height="114" rx="16" fill="#20284a" stroke="#7c8cff" stroke-width="2"/>
+    <circle cx="638" cy="207" r="17" fill="url(#accent)" filter="url(#glow)"/>
+    <text x="670" y="212" fill="#f8fafc" font-size="18" font-weight="700">3. Cosmos MCP</text>
+    <text x="628" y="245" fill="#b8c2d8" font-size="13">Valida con Zod &#183; transporta por stdio</text>
+    <text x="628" y="264" fill="#8490aa" font-size="12">Tools &#183; Resource &#183; Prompt</text>
+    <line x1="840" y1="227" x2="891" y2="227" stroke="#6ea8fe" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="904" y="180" width="232" height="94" rx="14" fill="#171f36" stroke="#34405d"/>
+    <text x="926" y="215" fill="#f8fafc" font-size="17" font-weight="700">4. NASA APIs</text>
+    <text x="926" y="241" fill="#9ca7bd" font-size="13">APOD &#183; Marte &#183; NeoWs &#183; EPIC</text>
+  </g>
+
+  <rect x="64" y="316" width="500" height="330" rx="18" fill="#12192c" stroke="#303b56"/>
+  <text x="90" y="354" fill="#dce4f2" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">CAPACIDADES PUBLICADAS</text>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="90" y="380" width="448" height="62" rx="12" fill="#19213a"/>
+    <rect x="106" y="394" width="58" height="32" rx="16" fill="#263b69"/>
+    <text x="135" y="415" fill="#bfd2ff" font-size="12" font-weight="700" text-anchor="middle">4</text>
+    <text x="180" y="405" fill="#f3f6fc" font-size="15" font-weight="700">Tools tipadas</text>
+    <text x="180" y="425" fill="#95a1b8" font-size="12">APOD, fotos de Marte, asteroides y EPIC</text>
+
+    <rect x="90" y="456" width="448" height="62" rx="12" fill="#19213a"/>
+    <rect x="106" y="470" width="58" height="32" rx="16" fill="#254d47"/>
+    <text x="135" y="491" fill="#b8f0e4" font-size="12" font-weight="700" text-anchor="middle">URI</text>
+    <text x="180" y="481" fill="#f3f6fc" font-size="15" font-weight="700">Resource MCP</text>
+    <text x="180" y="501" fill="#95a1b8" font-size="12">cosmos://apod/today</text>
+
+    <rect x="90" y="532" width="448" height="62" rx="12" fill="#19213a"/>
+    <rect x="106" y="546" width="58" height="32" rx="16" fill="#4a3563"/>
+    <text x="135" y="567" fill="#e6ccff" font-size="12" font-weight="700" text-anchor="middle">AI</text>
+    <text x="180" y="557" fill="#f3f6fc" font-size="15" font-weight="700">Prompt + skill</text>
+    <text x="180" y="577" fill="#95a1b8" font-size="12">Orquestan APOD + NeoWs en un briefing</text>
+    <text x="90" y="623" fill="#77849e" font-size="12">Salida: Markdown visual + structuredContent</text>
+  </g>
+
+  <rect x="590" y="316" width="546" height="330" rx="18" fill="#12192c" stroke="#303b56"/>
+  <text x="616" y="354" fill="#dce4f2" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">BRIEFING ESPACIAL &#8212; SALIDA DE EJEMPLO</text>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="616" y="380" width="494" height="112" rx="14" fill="#19213a"/>
+    <circle cx="674" cy="436" r="34" fill="none" stroke="#7088d7" stroke-width="2"/>
+    <ellipse cx="674" cy="436" rx="50" ry="18" fill="none" stroke="#4e5f98" stroke-width="1.5" transform="rotate(-18 674 436)"/>
+    <circle cx="674" cy="436" r="11" fill="url(#accent)"/>
+    <text x="744" y="413" fill="#8490aa" font-size="11" font-weight="700">APOD DEL D&#205;A</text>
+    <text x="744" y="440" fill="#f3f6fc" font-size="17" font-weight="700">NGC 300</text>
+    <text x="744" y="463" fill="#9ca7bd" font-size="12">Galaxia espiral a 6 millones de a&#241;os luz</text>
+
+    <rect x="616" y="508" width="494" height="96" rx="14" fill="#19213a"/>
+    <text x="640" y="538" fill="#8490aa" font-size="11" font-weight="700">ASTEROIDES CERCANOS</text>
+    <text x="640" y="568" fill="#f3f6fc" font-size="24" font-weight="700">5</text>
+    <text x="670" y="568" fill="#9ca7bd" font-size="12">objetos detectados hoy</text>
+    <rect x="924" y="538" width="158" height="30" rx="15" fill="#4d3d22" stroke="#9d7b37"/>
+    <text x="1003" y="558" fill="#f1d58c" font-size="11" font-weight="700" text-anchor="middle">1 clasificaci&#243;n PHA</text>
+    <text x="640" y="589" fill="#77849e" font-size="11">Clasificaci&#243;n t&#233;cnica; no es una alerta de impacto.</text>
+  </g>
+
+  <text x="600" y="688" fill="#68758f" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">Cursor Agent &#8596; MCP stdio &#8596; NASA Open APIs</text>
+</svg>
