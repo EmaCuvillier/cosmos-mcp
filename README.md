@@ -2,6 +2,23 @@
 
 Servidor **MCP** (Model Context Protocol) en TypeScript que expone APIs públicas de la NASA para **Cursor**. Incluye tools, un resource, un prompt MCP y una skill propia (`briefing-espacial`), con respuestas visuales y demo reproducible.
 
+## Demo
+
+Pedile a Cursor `Armame un briefing espacial de hoy` y la skill combina la
+imagen astronómica del día con los asteroides cercanos.
+
+<p align="center">
+  <img src="docs/demo-briefing.gif" alt="Demo del briefing espacial en Cursor" width="600">
+</p>
+
+<details>
+  <summary>Ver captura del resultado</summary>
+  <br>
+  <p align="center">
+    <img src="docs/demo-resultado.png" alt="Resultado del briefing espacial en Cursor" width="600">
+  </p>
+</details>
+
 ## Por qué
 
 En vez de copiar/pegar URLs de `api.nasa.gov`, el agente puede pedir en español cosas como “mostrame la foto astronómica de hoy” o “armame un briefing espacial” y resolverlo con tools tipadas, validadas y con manejo de errores.
