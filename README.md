@@ -8,16 +8,8 @@ Pedile a Cursor `Armame un briefing espacial de hoy` y la skill combina la
 imagen astronómica del día con los asteroides cercanos.
 
 <p align="center">
-  <img src="docs/demo-briefing.gif" alt="Demo del briefing espacial en Cursor" width="600">
+  <img src="docs/demo-resultado.png" alt="Resultado del briefing espacial en Cursor" width="600">
 </p>
-
-<details>
-  <summary>Ver captura del resultado</summary>
-  <br>
-  <p align="center">
-    <img src="docs/demo-resultado.png" alt="Resultado del briefing espacial en Cursor" width="600">
-  </p>
-</details>
 
 ## Por qué
 
